@@ -8,7 +8,8 @@ import {
     UilScenery,
     UilMessage,
     UilMoon,
-    UilBars
+    UilBars,
+    UilTimes
 } from "@iconscout/react-unicons";
 
 export default function Header({ name, career, avatar }) {
@@ -48,8 +49,8 @@ export default function Header({ name, career, avatar }) {
     ];
 
     return (
-        <header className="header fixed top-0 left-0 z-10 flex bg-white shadow  w-full">
-            <div className="section__header container flex justify-between relative">
+        <header className="header sticky top-0 left-0 z-10 flex bg-white shadow  w-full py-2">
+            <div className="section__header container flex justify-between">
                 <div className="flex items-center content-center ">
                     <div className="nav__logo flex">
                         <Image
@@ -71,9 +72,9 @@ export default function Header({ name, career, avatar }) {
                 </div>
                 <nav
                     className={
-                        !hidden
-                            ? " sm:flex sm:items-center sm:content-center sm:fixed sm:top-0 sm:w-max sm:h-max sm:left-0 bg-white md:relative md:items-center md:content-center md:py-5"
-                            : " sm:flex sm:items-center sm:content-center sm:fixed sm:top-0 sm:w-max sm:h-maxbg-white md:relative md:items-center md:content-center md:py-5 sm:-left-full md"
+                        hidden
+                            ? "lg:flex lg:items-center absolute lg:content-center lg:top-0 w-screen h-screen lg:left-0 bg-white lg:py-5"
+                            : "flex items-center content-center absolute top-0 -left-full bg-white py-5 z-10 w-screen h-screen transition ease-in-out"
                     }
                 >
                     <ul className="nav__list grid">
@@ -89,28 +90,36 @@ export default function Header({ name, career, avatar }) {
                                             setHidden(!hidden);
                                         }}
                                     >
-                                        <div className="nav__icon">{icon}</div>
-                                        {title}
+                                    <div className="flex items-center content-center mt-4">
+                                      <div className="w-8 h-8 mr-2 flex items-center " >{icon}</div>
+                                      <div className="font-medium text-2xl">{title}</div>  
+                                    </div>
+                                        
                                     </a>
                                 </li>
                             );
                         })}
                     </ul>
+                    <UilTimes
+                        className="w-8 h-8 absolute top-1 right-5"
+                        onClick={() => {
+                            setHidden(!hidden);
+                        }}
+                    />
                 </nav>
                 <div className="nav__btn flex items-center content-center cursor-pointer">
-                    <div className="mr-3">
-                        <button className="font-medium hover:textColor-blue-400">
+                    <div className="mr-3 hidden md:block">
+                        <span className="font-medium hover:textColor-blue-400 active:textColor-green-700">
                             RU
-                        </button>
+                        </span>
                         <span> / </span>
-                        <button className="font-medium hover:textColor-blue-400">
+                        <span className="font-normal hover:textColor-blue-400 active:textColor-green-700">
                             EN
-                        </button>
+                        </span>
                     </div>
-
-                    <UilMoon className="nav__mode hover:textColor-blue-300" />
+                    <UilMoon className="nav__mode hover:textColor-blue-300 mr-2 " />
                     <UilBars
-                        className="nav__toggle"
+                        className="nav__toggle w-6 h-6"
                         onClick={() => {
                             setHidden(!hidden);
                         }}
