@@ -1,0 +1,41 @@
+.about {
+  &__container {}
+
+  &__img {
+    width: 200px;
+    border-radius: 0.5rem;
+    justify-self: center;
+    align-items: center;
+  }
+
+  &__description {
+    text-align: center;
+    margin-bottom: $mb-2-5;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: $mb-2-5;
+
+    &-title {
+      font-family: $body-font-second;
+      font-weight: $font-semi-bold;
+      display: block;
+      font-size: $h2-font-size;
+      text-align: center;
+    }
+
+    &-name {
+      display: block;
+      font-size: $small-font-size;
+      text-align: center;
+    }
+  }
+
+  &__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

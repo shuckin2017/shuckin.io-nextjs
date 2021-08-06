@@ -2,8 +2,8 @@ import Menu from "../Menu";
 
 export default function Footer() {
   return (
-    <footer className="footer flex items-center justify-center w-full py-2 px-3 bg-blue-700">
-      <div className="footer__bg  w-full text-white">
+    <footer className="footer flex items-center justify-center w-full px-3 pt-10 pb-2 bg-blue-700">
+      <div className="w-full text-white">
         <div className="flex-col lg:flex-row footer__container container flex lg:justify-between mx-auto mb-5">
           <div className="mb-4 lg:mb-0">
             <h1 className="footer__title  lg:text-2xl -mb-1 font-medium text-xl">
@@ -14,7 +14,7 @@ export default function Footer() {
             </span>
           </div>
           <div className="footer__links flex lg:text-2xl flex-col lg:flex-row text-md">
-            <Menu text={"font-medium text-xl"} icon={"none"} iconSet globalStyle={"md:flex"}/>
+            <Menu text={"font-normal text-xl"} iconSet globalStyle={"md:flex"}/>
           </div>
 
           <div className="footer__socials">

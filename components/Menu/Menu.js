@@ -15,33 +15,33 @@ export default function Menu(props) {
 
   const menuData = [
     {
-      title: "Home",
+      title: "Главная",
       link: "/",
       exect: true,
       icon: <UilEstate className="w-7 h-7" />,
     },
     {
-      title: "Skills",
+      title: "Навыки",
       link: "/skills",
       icon: <UilBriefcaseAlt className="w-7 h-7" />,
     },
     {
-      title: "Service",
+      title: "Услуги",
       link: "/service",
       icon: <UilFileAlt className="w-7 h-7" />,
     },
     {
-      title: "Portfolio",
+      title: "Портфолио",
       link: "/portfolio",
       icon: <UilScenery className="w-7 h-7" />,
     },
     {
-      title: "About",
+      title: "Обо мне",
       link: "/about",
       icon: <UilUser className="w-7 h-7" />,
     },
     {
-      title: "Contactme",
+      title: "Конакты",
       link: "/contact",
       icon: <UilMessage className="w-7 h-7" />,
     },
@@ -51,7 +51,7 @@ export default function Menu(props) {
       {menuData.map(({ link, exect, icon, title }, i) => {
         return (
           <li
-            className="nav__item  cursor-pointer py-3 hover:text-gray-500 active:text-gray-500 -mx-5 px-7"
+            className="nav__item  cursor-pointer py-3 hover:text-gray-500 active:text-gray-500 -mx-5 px-7 transition-all"
             key={i}
           >
             <Link href={link}>

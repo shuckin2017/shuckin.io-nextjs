@@ -1,0 +1,41 @@
+.portfolio {
+  &__container {
+    overflow: initial;
+  }
+
+  &__content {
+    padding: 0 1.5rem;
+  }
+
+  &__img {
+    width: 265px;
+    border-radius: .5rem;
+    justify-self: center;
+  }
+
+  &__title {
+    font-size: $h2-font-size;
+    margin-bottom: $mb-0-5;
+  }
+
+  &__description {
+    margin-bottom: $mb-0-75;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__button {
+    margin-right: $mb-1;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    color: $white-color;
+    margin-left: $mb-1;
+  }
+
+}

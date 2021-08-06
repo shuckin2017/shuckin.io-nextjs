@@ -3,23 +3,17 @@ import avatar from "../assets/img/avatar.png";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
-import About from "../components/About";
-import Qualification from "../components/Qualification";
-import Portfolio from "../components/Portfolio/Portfolio";
 
-export default function Home() {
+export default function contact() {
   return (
     <div className="flex flex-col min-h-screen">
       <Head>
-        <title>Create Next App</title>
+        <title>Контакты</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header name="Максим Щукин" career="Frontend Developer" avatar={avatar} />
 
-      <main className="flex flex-col w-full flex-1 lg:px-10">
-        <About />
-        <Qualification/>
-        <Portfolio/>
+      <main className="flex flex-col w-full flex-1 px-20">
         <Contact />
       </main>
 
