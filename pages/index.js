@@ -6,10 +6,11 @@ import Contact from "../components/Contact";
 import About from "../components/About";
 import Qualification from "../components/Qualification";
 import Portfolio from "../components/Portfolio/Portfolio";
+import Project from "../components/Project/Project";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen overflow-hidden">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -20,6 +21,7 @@ export default function Home() {
         <About />
         <Qualification/>
         <Portfolio/>
+        <Project/>
         <Contact />
       </main>
 

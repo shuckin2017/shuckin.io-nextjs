@@ -1,0 +1,24 @@
+.project {
+  text-align: center;
+
+  &__bg {
+    background-color: $primary-color;
+    padding-top: 3rem;
+  }
+
+  &__title {
+    font-size: $h2-font-size;
+    margin-bottom: $mb-0-75;
+    color: $white-color;
+  }
+
+  &__description {
+    margin-bottom: $mb-1-5;
+    color: $white-color;
+  }
+
+  &__img {
+    width: 232px;
+    justify-self: center;
+  }
+}
