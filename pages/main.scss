@@ -1,0 +1,35 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap");
+
+/*===== STYLE VENDOR =====*/
+@import "./assets/sass/vendor/source";
+@import "./assets/sass/vendor/mixins";
+@import "./assets/sass/vendor/helpers";
+
+/*===== BASE STYLE =====*/
+@import "./assets/sass/var";
+@import "./assets/sass/grid";
+@import "./assets/sass/base";
+@import "./assets/sass/reset";
+
+// /*===== STYLE PAGES =====*/
+// @import "./pages/Home/Home";
+// @import "./pages/About/About";
+// @import "./pages/Skills/Skills";
+// @import "./pages/Qualification/Qualification";
+// @import "./pages/Services/Services";
+// @import "./pages/Portfolio/Portfolio";
+// @import "./pages/Project/Project";
+// @import "./pages/Contact/Contact";
+
+// /*===== STYLE COMPONENTS =====*/
+// @import "./components/Header/Header";
+// @import "./components/NavMenu/NavMenu";
+// @import "./components/SociaIcons/SociaIcons";
+// @import "./components/Button/Button";
+// @import "./components/Footer/Footer";
+
+/*===== MEDIA QUERIES =====*/
+@import "./assets/sass/vendor/breakpoint";
+@import "./assets/sass/media-queries";

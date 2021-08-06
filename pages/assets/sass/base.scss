@@ -1,0 +1,61 @@
+/*===== BASE =====*/
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $body-font;
+    font-size: $normal-font-size;
+    color: $first-color;
+    font-weight: $font-normal;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.section {
+    padding: 2rem 0 2rem 0;
+}
+
+.section__title {
+    font-size: $h1-font-size;
+    text-align: center;
+}
+
+.section__subtitle {
+    display: block;
+    font-size: $small-font-size;
+    margin-bottom: $mb-3;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}

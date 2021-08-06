@@ -1,0 +1,55 @@
+$header-height: 3rem;
+
+/*========== Colors ==========*/
+/* Change favorite color */
+$first-color: #0e2431;
+$primary-color: #1968fe;
+$second-color: #6fcf97;
+$white-color: #fff;
+$container-color: #fff;
+$input-color: #6fcf97;
+
+$first-color-lighter-1: lighten($first-color, 10%);
+$first-color-lighter: lighten($first-color, 20%);
+$primary-color-lighten-1: lighten($primary-color, 10%);
+$primary-color-lighten-2: lighten($primary-color, 30%);
+$primary-color-darken-1: darken($primary-color, 10%);
+$primary-color-darken-2: darken($primary-color, 20%);
+
+/*========== Font and typography ==========*/
+$body-font: "Rubik", sans-serif;
+$body-font-second: "Sen", sans-serif;
+
+/* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+$big-font-size: 2rem;
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1.125rem;
+$normal-font-size: 0.938rem;
+$small-font-size: 0.813rem;
+$smaller-font-size: 0.75rem;
+
+@media screen and (max-width: 968px) {
+    $big-font-size: 3rem;
+    $h1-font-size: 2.25rem;
+    $h2-font-size: 1.5rem;
+    $h3-font-size: 1.25rem;
+    $normal-font-size: 1rem;
+    $small-font-size: 0.875rem;
+    $smaller-font-size: 0.813rem;
+}
+
+/*========== Font weight ==========*/
+$font-light: 300;
+$font-normal: 400;
+$font-regular: 500;
+$font-medium: 600;
+$font-semi-bold: 700;
+
+// /*========== z index ==========*/
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 100;
+
+// /*========== transition ==========*/
+$transition-all: all 0.15s ease-in-out;

@@ -1,0 +1,14 @@
+body.dark-theme {
+    $primary-color: #1968fe;
+    $second-color: #6fcf97;
+    $white-color: #fff;
+    $container-color: #fff;
+    $input-color: #6fcf97;
+
+    $first-color-lighter-1: lighten($first-color, 10%);
+    $first-color-lighter: lighten($first-color, 20%);
+    $primary-color-lighten-1: lighten($primary-color, 10%);
+    $primary-color-lighten-2: lighten($primary-color, 30%);
+    $primary-color-darken-1: darken($primary-color, 10%);
+    $primary-color-darken-2: darken($primary-color, 20%);
+}
