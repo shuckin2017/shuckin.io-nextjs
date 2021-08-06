@@ -1,16 +1,51 @@
 import { useState } from "react";
 import Image from "next/image";
-import menuData from "../../data/menuData";
-
 import {
-    UilTimes,
-    UilBars,
-    UilDownloadAlt,
+    UilEstate,
+    UilUser,
+    UilFileAlt,
+    UilBriefcaseAlt,
+    UilScenery,
+    UilMessage,
     UilMoon,
+    UilBars
 } from "@iconscout/react-unicons";
 
 export default function Header({ name, career, avatar }) {
     const [hidden, setHidden] = useState(false);
+    const menuData = [
+        {
+            title: "Home",
+            link: "/",
+            exect: true,
+            icon: <UilEstate />,
+        },
+        {
+            title: "Skills",
+            link: "/skills",
+            icon: <UilBriefcaseAlt />,
+        },
+        {
+            title: "Service",
+            link: "/service",
+            icon: <UilFileAlt />,
+        },
+        {
+            title: "Portfolio",
+            link: "/portfolio",
+            icon: <UilScenery />,
+        },
+        {
+            title: "About",
+            link: "/about",
+            icon: <UilUser />,
+        },
+        {
+            title: "Contactme",
+            link: "/contact",
+            icon: <UilMessage />,
+        },
+    ];
 
     return (
         <header className="header fixed top-0 left-0 z-10 flex bg-white shadow  w-full">

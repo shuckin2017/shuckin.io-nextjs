@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
-import avatar from "../pages/assets/img/avatar.png";
-import Header from "./components/Header";
+import avatar from "../assets/img/avatar.png";
+import Header from "../components/Header";
 
 export default function Home() {
     return (
