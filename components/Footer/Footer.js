@@ -1,3 +1,5 @@
+import Menu from "../Menu";
+
 export default function Footer() {
   return (
     <footer className="footer flex items-center justify-center w-full py-2 px-3 bg-blue-700">
@@ -11,33 +13,10 @@ export default function Footer() {
               Frontend developer
             </span>
           </div>
-          <ul className="footer__links flex lg:text-2xl flex-col lg:flex-row text-md">
-            <li>
-              <a href="#home" className="footer__link hover:text-gray-300">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#project" className="footer__link hover:text-gray-300">
-                Project
-              </a>
-            </li>
-            <li>
-              <a href="#portfolio" className="footer__link hover:text-gray-300">
-                Portfolio
-              </a>
-            </li>
-            <li>
-              <a href="#services" className="footer__link hover:text-gray-300">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="footer__link hover:text-gray-300">
-                Contactme
-              </a>
-            </li>
-          </ul>
+          <div className="footer__links flex lg:text-2xl flex-col lg:flex-row text-md">
+            <Menu text={"font-medium text-xl"} icon={"none"} iconSet globalStyle={"md:flex"}/>
+          </div>
+
           <div className="footer__socials">
             <ul className="footer__socials-list"></ul>
           </div>
