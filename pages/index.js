@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import avatar from "../assets/img/avatar.png";
 import Header from "../components/Header";
+import Footer from '../components/Footer'
 
 export default function Home() {
     return (
@@ -22,7 +23,7 @@ export default function Home() {
                 <p></p>
             </main>
 
-            <footer className="flex items-center justify-center w-full h-24 border-t"></footer>
+            <Footer/>
         </div>
     );
 }

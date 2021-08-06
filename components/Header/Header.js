@@ -19,37 +19,37 @@ export default function Header({ name, career, avatar }) {
             title: "Home",
             link: "/",
             exect: true,
-            icon: <UilEstate />,
+            icon: <UilEstate className="w-6 h-6"/>,
         },
         {
             title: "Skills",
             link: "/skills",
-            icon: <UilBriefcaseAlt />,
+            icon: <UilBriefcaseAlt className="w-6 h-6"/>,
         },
         {
             title: "Service",
             link: "/service",
-            icon: <UilFileAlt />,
+            icon: <UilFileAlt className="w-6 h-6" />,
         },
         {
             title: "Portfolio",
             link: "/portfolio",
-            icon: <UilScenery />,
+            icon: <UilScenery className="w-6 h-6"/>,
         },
         {
             title: "About",
             link: "/about",
-            icon: <UilUser />,
+            icon: <UilUser className="w-6 h-6"/>,
         },
         {
             title: "Contactme",
             link: "/contact",
-            icon: <UilMessage />,
+            icon: <UilMessage className="w-6 h-6"/>,
         },
     ];
 
     return (
-        <header className="header sticky top-0 left-0 z-10 flex bg-white shadow  w-full py-2">
+        <header className="header sticky top-0 left-0 z-10 flex bg-white shadow w-full py-2 px-3">
             <div className="section__header container flex justify-between">
                 <div className="flex items-center content-center ">
                     <div className="nav__logo flex">
@@ -77,10 +77,10 @@ export default function Header({ name, career, avatar }) {
                             : "flex items-center content-center absolute top-0 -left-full bg-white py-5 z-10 w-screen h-screen transition ease-in-out"
                     }
                 >
-                    <ul className="nav__list grid">
+                    <ul className="nav__list mt-6">
                         {menuData.map(({ link, exect, icon, title }, i) => {
                             return (
-                                <li className="nav__item  cursor-pointer ">
+                                <li className="nav__item  cursor-pointer p-2 hover:bg-blue-100">
                                     <a
                                         to={link}
                                         className="nav__link "
@@ -90,8 +90,8 @@ export default function Header({ name, career, avatar }) {
                                             setHidden(!hidden);
                                         }}
                                     >
-                                    <div className="flex items-center content-center mt-4">
-                                      <div className="w-8 h-8 mr-2 flex items-center " >{icon}</div>
+                                    <div className="flex items-center content-center ">
+                                      <div className=" mr-4 flex items-center" >{icon}</div>
                                       <div className="font-medium text-2xl">{title}</div>  
                                     </div>
                                         
