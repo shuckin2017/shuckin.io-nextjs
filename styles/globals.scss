@@ -1,0 +1,11 @@
+:root {
+  --bgcolor: #fff;
+}
+
+[data-theme="dark"] {
+  --bgcolor: #4f505a;
+}
+
+.header {
+  background-color: var(--bgcolor);
+}

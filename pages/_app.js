@@ -1,5 +1,6 @@
 import "tailwindcss/tailwind.css";
 import "../styles/main.scss";
+import "../styles/globals.scss"
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";

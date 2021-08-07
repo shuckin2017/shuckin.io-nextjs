@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import {
   UilMoon,
@@ -12,12 +12,31 @@ import Menu from "../Menu";
 
 export default function Header({ name, career, avatar }) {
   const [hidden, setHidden] = useState(false);
+  const [theme, setTheme] = useState("light");
   const [darkMode, setMode] = useState(false);
 
+  useEffect(() => {
+    document.documentElement.setAttribute(
+      "data-theme",
+      localStorage.getItem("theme")
+    );
 
+    setTheme(localStorage.getItem("theme"));
+  }, []);
+
+  const switchTheme = () => {
+    theme === "light" ? saveTheme("dark") : saveTheme("light");
+    setMode(!darkMode);
+  };
+
+  const saveTheme = (theme) => {
+    setTheme(theme);
+    localStorage.setItem("theme", theme);
+    document.documentElement.setAttribute("data-theme", theme);
+  };
 
   return (
-    <header className="header sticky top-0 left-0 z-10 flex bg-white shadow w-full py-2 px-3">
+    <header className="header sticky top-0 left-0 z-10 flex shadow w-full py-2 px-3">
       <div className="section__header container flex justify-between h-auto">
         <div className="flex items-center content-center ">
           <div className="nav__logo flex">
@@ -80,16 +99,12 @@ export default function Header({ name, career, avatar }) {
             {darkMode ? (
               <UilSun
                 className="nav__mode hover:color-blue-700 mr-2 transition-all"
-                onClick={() => {
-                  setMode(!darkMode);
-                }}
+                onClick={switchTheme}
               />
             ) : (
               <UilMoon
                 className="nav__mode hover:color-blue-700 mr-2 transition-all"
-                onClick={() => {
-                  setMode(!darkMode);
-                }}
+                onClick={switchTheme}
               />
             )}
           </div>
